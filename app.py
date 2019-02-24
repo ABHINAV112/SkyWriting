@@ -10,7 +10,7 @@ def index():
 @app.route('/AR')
 def AR():
     text1 = main()
-    return render_template("AR.html",text =text1)
+    return render_template("resize.html",text =text1)
 
 # @app.route('/AR', methods=['GET', 'POST'])
 # def AR():
