@@ -6,11 +6,16 @@
         <!-- <script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script> -->
     </head>
     <body>
+        <div class="Frame">
+            <a href="/" class="HomeLink">Home</a>
+            <a href="/text" class="TextLink">Text</a>
+            <a href="/AR" class="ArLink">AR</a>
+        </div>
         <div style='margin : 20px; overflow: hidden;'>
         <!-- <input id = "myInput" type = "text" value = "Swag" /> -->
         <a-scene embedded arjs='trackingMethod: best;'>
-        <a-anchor hit-testing-enabled='true'>
-            <a-entity id="demo" position="1 0 0" scale="3 6 3" text="value: {{text}} ;"></a-entity>
+            <a-anchor hit-testing-enabled='true'> 
+                    <a-entity id="demo" position="1 0 0" scale="3 6 3" text="value: {{text}} ;"></a-entity>
         </a-anchor>
         <a-camera-static/>
         </a-scene>
