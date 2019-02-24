@@ -3,6 +3,8 @@ This web application detects a blue circular object. Following which the path of
 
 The text can then be saved to Firestore by a button click. This text is then loaded into a JS application which displays it using augmented reality against a preset surface.
 
+![picture 1](https://raw.githubusercontent.com/ABHINAV112/Pokedex/master/output/screenRecording.gif)
+
 ## Quick Start:
 pip install all the dependancies uding command line/ terminal :
 pip install opencv-python
