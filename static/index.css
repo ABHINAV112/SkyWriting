@@ -1,83 +1,322 @@
-body{
-    position: relative;
-    width: 1440px;
-    height: 1024px;
 
-    background: #34E4EA;
+/* GENERAL STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+  background: rgb(21, 1, 56);
+  font-family: 'Lucida Sans Unicode', 'Arial', serif;
+  color: white;
 }
-a{
+
+h1, h3, h4, header .btn {
+  font-weight: 700;
+}
+
+h1 {
+  margin: 100px 0 20px;
+  text-transform: uppercase;
+  font-size: 2.6rem;
+}
+
+h3 {
+  margin-bottom: 25px;
+  font-size: 2.3rem;
+  text-align: left;
+}
+
+h4 {
+  font-size: 2rem;
+  padding: 30px;
+}
+
+h3:after {
+  content: '';
+  display: block;
+  width: 10%;
+  padding-top: 5px;
+  border-bottom: 3px solid whitesmoke;
+}
+
+h1 + h4 {
+  font-weight: normal;
+}
+
+a {
+  text-align: center;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  background: #fcca2f;
+  font-size: 14px;
+  color: steelblue;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all ease .3s;
+          transition: all ease .3s;
+}
+
+.btn {
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: 12px 30px;
+}
+
+.block {
+  width: 130px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+/* HEADER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+header .btn {
+  text-transform: uppercase;
+}
+
+header a:hover, .about a:hover {
+  background: #fcc316;
+}
+
+header .btn, .services {
+  margin-top: 100px;
+}
+
+header {
+  padding: 80px 0 150px;
+}
+
+.about, .contact {
+  padding: 150px 0;
+}
+
+header {
+  background: url("https://unsplash.it/1080/720/?image=377") no-repeat fixed center / cover;
+  text-align: center;
+}
+
+nav ul, .contact ul {
+  list-style: none;
+  font-size: 0;
+}
+
+nav li, .contact li {
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+nav li {
+  width: 50%;
+}
+
+nav a {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  padding: 7px 0;
+  line-height: 30px;
+}
+
+nav li:nth-child(2n+1) a:after {
+  position: absolute;
+  content: '';
+  top: 19.5px;
+  right: -2.5px;
+  z-index: 10;
+  border-radius: 100%;
+  background: steelblue;
+  width: 5px;
+  height: 5px;
+}
+
+
+
+/* SERVICES STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.services a {
+  padding: 25px;
+  background: #fafafa;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.services a:hover {
+  color: black;
+}
+
+.services span {
+  font-size: 5.5em;
+  color: #f4ba04;
+}
+
+.services a:hover span {
+  color: white;
+}
+
+.services p {
+  margin: 15px 0 0;
+}
+
+
+
+/* ABOUT STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.about {
+  background: url("https://unsplash.it/1080/720/?image=349") no-repeat fixed center / cover;
+  color: black;
+}
+
+.about .one-third, 
+.about .two-thirds {
+  background: white;
+  background: rgba(255,255,255,.3);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.about .one-third {
+  margin-top: 20px;
+}
+
+.about a {
+  margin-top: 10px;
+}
+
+.about ul {
+  margin-bottom:18px;
+}
+
+.about h3:after, .contact h3:after {
+  border-color: black;
+}
+
+.about .center {
+  text-align: center;
+}
+
+.about .bottom {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.about .one-third a {
+  margin: 10px auto;
+  width: 50%;
+  display: block;
+} 
+
+.about .two-thirds p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+/* MEDIA QUERIES STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 550px) {
+
+  nav li {
+    width: auto;
+  }
+
+  a {
+    box-shadow: 0 8px #f4ba04;
+  }
+
+  nav a {
+    padding: 7px;
+    border-right: 1px solid #fabd03;
+    width: 80px;
+  }
+
+  nav li:nth-child(2n+1) a:after {
+    content: none;
+  }
+
+  nav li:last-child a {
+    border-right: none;
+  }
+
+  header a:hover, .about a:hover {
+    box-shadow: 0 8px #f4ba04;
+  }
+
+  header a:active, .about a:active {
+    box-shadow: 0 4px #f4ba04;
+    -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+
+  .about .one-third {
+    margin-top: 0;
+  }
+  
+  .about .one-third a {
+    width: 35%;  
+  }
+  
+  .contact .creator a {
+    box-shadow: none;
+  }
+
+}
+
+
+
+@media (min-width: 750px) {
+
+  .row a:hover {
+    box-shadow: 0 -8px white;
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2.8rem;
+  }
+
+  h4 {
+    font-size: 2.4rem;
+  }
+
+  .services a:hover {
+    box-shadow: 0 -8px white;
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  
+  .contact ul a {
+    margin-left: 45px;
+  }
+
+  .contact ul span {
+    font-size: 3em;
+  }
+
+}
+
+
+.aboutSec{
+    background: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat fixed center / cover;
+}
+
+.aboutSec h3{
+    text-align: center;
     text-decoration: none;
 }
-a:hover{
 
-
-    background: #34E4EA;
-}
-.HomeLink{
-    border-radius: 6px;
-    padding-left: 20px;
-    padding-top: 10px;
-    position: absolute;
-width: 106px;
-height: 48px;
-left: 904px;
-top: 30px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-font-size: 36px;
-
-color: #FFFFFF;
-}
-
-.Frame{
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    left: 0px;
-    top: calc(50% - 100px/2 - 462px);
-    
-    background: #2B4141;
-}
-
-.TextLink{
-    border-radius: 6px; 
-    padding-left: 20px;
-    position: absolute;
-    padding-top: 10px;
-    width: 93px;
-    height: 48px;
-left: 1224px;
-top: 30px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-font-size: 36px;
-
-color: #FFFFFF;
-
-}
-
-.ArLink{
-    border-radius: 6px;
-padding-left: 20px; 
-position: absolute;
-padding-top: 10px;
-width: 73px;
-height: 48px;
-left: 1084px;
-top: 30px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-font-size: 36px;
-
-color: #FFFFFF;
-
+.aboutSec h4{
+    font-size: 2em;
 }

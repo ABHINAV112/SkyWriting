@@ -4,3 +4,5 @@ __pycache__/autoCorrect.cpython-36.pyc
 __pycache__/main.cpython-36.pyc
 __pycache__/skyWriting.cpython-36.pyc
 __pycache__/textGetter.cpython-36.pyc
+.vscode
+.vscode\settings.json
