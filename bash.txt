@@ -1,0 +1,4 @@
+mac,linux
+export GOOGLE_APPLICATION_CREDENTIALS=apiKey.json
+windows
+set GOOGLE_APPLICATION_CREDENTIALS=apiKey.json

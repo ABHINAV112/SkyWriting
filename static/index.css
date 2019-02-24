@@ -1,0 +1,83 @@
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+    background: #34E4EA;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+
+
+    background: #34E4EA;
+}
+.HomeLink{
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: absolute;
+width: 106px;
+height: 48px;
+left: 904px;
+top: 30px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 36px;
+
+color: #FFFFFF;
+}
+
+.Frame{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: calc(50% - 100px/2 - 462px);
+    
+    background: #2B4141;
+}
+
+.TextLink{
+    border-radius: 6px; 
+    padding-left: 20px;
+    position: absolute;
+    padding-top: 10px;
+    width: 93px;
+    height: 48px;
+left: 1224px;
+top: 30px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 36px;
+
+color: #FFFFFF;
+
+}
+
+.ArLink{
+    border-radius: 6px;
+padding-left: 20px; 
+position: absolute;
+padding-top: 10px;
+width: 73px;
+height: 48px;
+left: 1084px;
+top: 30px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 36px;
+
+color: #FFFFFF;
+
+}
