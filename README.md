@@ -3,24 +3,25 @@ This web application detects a blue circular object. Following which the path of
 
 The text can then be saved to Firestore by a button click. This text is then loaded into a JS application which displays it using augmented reality against a preset surface.
 
-![picture 1](https://raw.githubusercontent.com/ABHINAV112/SkyWriting/master/output/screenRecord.gif)
+![demo](https://raw.githubusercontent.com/ABHINAV112/SkyWriting/master/output/screenRecord.gif)
 
 ## Quick Start:
-pip install all the dependancies uding command line/ terminal :
+pip install all the dependancies using command line/terminal :
+```
 pip install opencv-python
-
 pip install Google Vision API
-
 pip install Tensorflow
-
 pip install Keras
-
 pip install numpy
+```
 # Clone the repo
-git clone 
-
+```
+git clone https://github.com/ABHINAV112/SkyWriting.git
+```
 # Running the app
+```
 python app.py
+```
 ## Dependancies:
 flask
 opencv-python
@@ -38,4 +39,4 @@ numpy
 2. Flask
 3. Opencv
 4. OCR
-5. JAVASCRIPT
+5. Javascript
